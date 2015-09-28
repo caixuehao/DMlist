@@ -11,6 +11,7 @@
 #import "BaiDu.h"
 #import "CAIPuliceFuntion.h"
 #import "imageViewController.h"
+#import "ZSGC.h"
 
 @interface XiangXiXingXi ()
 
@@ -23,6 +24,11 @@
 - (IBAction)更多按钮:(id)sender {
 }
 - (IBAction)保存备注按钮:(id)sender {
+    BOOL bl = [[ZSGC ZSGC] setName:_ARR[0] BeiZhu:_BeiZhuTextView.text FenZu:_ARR[2] oldName:_ARR[0]];
+    NSString* str = bl?@"备注更改成功":@"备注修改失败";
+    [CAIPuliceFuntion showMessage:str];
+    
+    [_SetBeiZhuBtn setEnabled:NO];
 }
 
 - (IBAction)设置为封面按钮:(id)sender {
@@ -35,7 +41,7 @@
     //通知用户
     [CAIPuliceFuntion showMessage:@"成功设置封面"];
 }
-
+//================================================
 - (void)viewDidLoad {
     [super viewDidLoad];
     _w = [[UIScreen mainScreen] bounds].size.width;
@@ -57,6 +63,7 @@
     self.nameLabel.text = _ARR[0];
     //设置备注
     self.BeiZhuTextView.text = _ARR[1];
+    self.BeiZhuTextView.delegate = self;//设置代理
     //设置封面滚动视图
     _FengMainScrollView.showsHorizontalScrollIndicator = FALSE;//设置滚动条隐藏
     _FengMainScrollView.pagingEnabled = YES;//设置是否分页
@@ -184,6 +191,15 @@
     NSLog(@"1");
     return YES;
 }
+
+//内容发生改变编辑
+- (void)textViewDidChange:(UITextView *)textView{
+    [self.SetBeiZhuBtn setEnabled:YES];
+}
+
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

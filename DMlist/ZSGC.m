@@ -105,4 +105,26 @@ static ZSGC* mydb;
 {
     return [self C_FenZuAll:FenZuInt].count;
 }
+
+-(BOOL)setName:(NSString *)newname BeiZhu:(NSString *)beizhu FenZu:(NSString *)fenzu oldName:(NSString *)oldname{
+
+    NSString *sql = [[NSString alloc]initWithFormat:@"UPDATE H SET name = '%@' , beizhu = '%@' ,fenzu = '%@' WHERE name = '%@'",newname,beizhu,fenzu,oldname];
+    sqlite3_stmt *statement;
+    int error = sqlite3_prepare_v2(db, [sql UTF8String], -1, &statement, nil);
+    NSLog(@"%d",error);
+    if (sqlite3_step(statement) == SQLITE_DONE){
+        //这里可以更改优化
+        [self C_All];
+        
+        return YES;
+    }
+   
+    
+    return NO;
+}
+
+-(BOOL)setBeiZhu:(NSString *)beizhu Name:(NSString *)name{
+//    NSString *sql = [[NSString alloc]initWithFormat:@"UPDATE H SET beizhu = ? ,name = ? ,fenzu = ? WHERE name = ?"];
+    return YES;
+}
 @end

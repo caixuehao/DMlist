@@ -3,7 +3,7 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "__28+[BaiDu setFenMian3:CiTiao:]_block_invoke_2:BaiDu.m">
+         contextName = "-[YingDaoVC viewDidLoad]:YingDaoVC.m">
       </ContextState>
       <ContextState
          contextName = "-[DMTableVC viewDidLoad]:DMTableVC.m">
@@ -33,6 +33,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[XiangXiXingXi &#x4fdd;&#x5b58;&#x5907;&#x6ce8;&#x6309;&#x94ae;:]:XiangXiXingXi.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_BeiZhuTextView.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "+[BaiDu setFenMian3:CiTiao:]:BaiDu.m">
          <PersistentStrings>
             <PersistentString
@@ -52,7 +60,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[YingDaoVC viewDidLoad]:YingDaoVC.m">
+         contextName = "__28+[BaiDu setFenMian3:CiTiao:]_block_invoke_2:BaiDu.m">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

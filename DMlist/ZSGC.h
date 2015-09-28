@@ -21,11 +21,16 @@
 
     -(id)init:(NSString*)filePath;
 
-   /*废弃*/ -(NSMutableArray*)C_All;//查询全部数据［［名字，备注，分组］，［名字，备注，分组］，［名字，备注，分组］.........］
+    -(NSMutableArray*)C_All;//查询全部数据［分组1［［名字，备注，分组］......］，分组2［［名字，备注，分组］......］，......］
 
     -(NSMutableArray*)C_FenZuAll:(NSInteger)FenZuInt;//根据分组号查询分组数据
 
     -(NSInteger)C_FenZuCount:(NSInteger)FenZuInt;//根据分组号查询分组元素数量
 
 
+
+
+    -(BOOL)setName:(NSString*)newname BeiZhu:(NSString*)beizhu FenZu:(NSString*)fenzu oldName:(NSString*)oldname;//修改
+
+    -(BOOL)setBeiZhu:(NSString*)beizhu Name:(NSString*)name;//设置备注
 @end
