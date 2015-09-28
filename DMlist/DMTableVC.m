@@ -54,7 +54,7 @@
     
     _collection.delegate = self;
     _collection.dataSource = self;
-    _w = ([[UIScreen mainScreen] bounds].size.width-20)/3;
+    _w = ([[UIScreen mainScreen] bounds].size.width-15) / 2;
 //    NSLog(@"%f",ww);
     [_collection registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"AddDMCell"];
     [_collection registerClass:[DMCollectionViewCell class] forCellWithReuseIdentifier:@"DMCell"];//注册Cell
