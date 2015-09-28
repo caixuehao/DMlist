@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DMTableVC">
+            <connections>
+                <outlet property="DH" destination="W6f-H0-cYK" id="u2C-br-xFg"/>
+                <outlet property="DHbg" destination="Yfr-YB-cM5" id="QvK-a0-oCC"/>
+                <outlet property="TAB" destination="NUp-Qj-qbo" id="fa6-e0-5Po"/>
+                <outlet property="btn" destination="iUe-ho-iel" id="KL6-hX-wgj"/>
+                <outlet property="btn2" destination="ry9-jK-1it" id="rC9-dQ-J3b"/>
+                <outlet property="collection" destination="sbF-Rx-x4h" id="ak8-Xq-0iB"/>
+                <outlet property="table" destination="NpP-Ik-Jlq" id="cJ4-7N-6Ws"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W6f-H0-cYK" userLabel="DH">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yfr-YB-cM5">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUe-ho-iel">
+                            <rect key="frame" x="0.0" y="0.0" width="49" height="50"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="FanHui:" destination="-1" eventType="touchUpInside" id="BD6-pI-geB"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ry9-jK-1it">
+                            <rect key="frame" x="280" y="5" width="30" height="30"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iUe-ho-iel" firstAttribute="leading" secondItem="W6f-H0-cYK" secondAttribute="leading" constant="10" id="4tK-DH-wA5" userLabel="btn左"/>
+                        <constraint firstAttribute="trailing" secondItem="ry9-jK-1it" secondAttribute="trailing" constant="10" id="605-QQ-rhu" userLabel="btn2右"/>
+                        <constraint firstAttribute="bottom" secondItem="ry9-jK-1it" secondAttribute="bottom" constant="13" id="Bib-iM-GUx" userLabel="btn2下"/>
+                        <constraint firstItem="Yfr-YB-cM5" firstAttribute="top" secondItem="W6f-H0-cYK" secondAttribute="top" id="EiB-12-BoZ" userLabel="image上"/>
+                        <constraint firstAttribute="bottom" secondItem="Yfr-YB-cM5" secondAttribute="bottom" id="K6o-sH-bXY" userLabel="image下"/>
+                        <constraint firstItem="iUe-ho-iel" firstAttribute="top" secondItem="W6f-H0-cYK" secondAttribute="top" id="ONc-A1-CWz" userLabel="btn上"/>
+                        <constraint firstItem="Yfr-YB-cM5" firstAttribute="leading" secondItem="W6f-H0-cYK" secondAttribute="leading" id="Wbj-gf-WBH" userLabel="image左"/>
+                        <constraint firstAttribute="trailing" secondItem="Yfr-YB-cM5" secondAttribute="trailing" id="gUd-it-bxD" userLabel="image右"/>
+                        <constraint firstAttribute="bottom" secondItem="iUe-ho-iel" secondAttribute="bottom" id="yUV-VN-enO" userLabel="btn下"/>
+                        <constraint firstItem="ry9-jK-1it" firstAttribute="top" secondItem="W6f-H0-cYK" secondAttribute="top" constant="3" id="yhf-HT-uTX" userLabel="btn2上"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NUp-Qj-qbo" userLabel="TAB">
+                    <rect key="frame" x="0.0" y="50" width="320" height="518"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" tag="11" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NpP-Ik-Jlq">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="22" contentMode="scaleToFill" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="sbF-Rx-x4h">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="nEu-ng-XxQ">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="NpP-Ik-Jlq" firstAttribute="top" secondItem="NUp-Qj-qbo" secondAttribute="top" id="CZn-jm-Q3Q"/>
+                        <constraint firstAttribute="bottom" secondItem="NpP-Ik-Jlq" secondAttribute="bottom" id="Jrt-UY-3SL"/>
+                        <constraint firstAttribute="trailing" secondItem="sbF-Rx-x4h" secondAttribute="trailing" id="K3k-BW-xh4"/>
+                        <constraint firstItem="NpP-Ik-Jlq" firstAttribute="leading" secondItem="NUp-Qj-qbo" secondAttribute="leading" id="KvL-zm-NGq"/>
+                        <constraint firstItem="sbF-Rx-x4h" firstAttribute="top" secondItem="NUp-Qj-qbo" secondAttribute="top" id="VI6-Al-iv8"/>
+                        <constraint firstAttribute="bottom" secondItem="sbF-Rx-x4h" secondAttribute="bottom" id="db0-5h-712"/>
+                        <constraint firstAttribute="trailing" secondItem="NpP-Ik-Jlq" secondAttribute="trailing" id="lwh-g9-LdX"/>
+                        <constraint firstItem="sbF-Rx-x4h" firstAttribute="leading" secondItem="NUp-Qj-qbo" secondAttribute="leading" id="wNd-4R-JLI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="W6f-H0-cYK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BUN-yM-3yb" userLabel="DH左"/>
+                <constraint firstItem="NUp-Qj-qbo" firstAttribute="top" secondItem="W6f-H0-cYK" secondAttribute="bottom" id="Gwn-D4-HPJ" userLabel="tab，dh间距"/>
+                <constraint firstAttribute="trailing" secondItem="NUp-Qj-qbo" secondAttribute="trailing" id="cka-F0-U7g" userLabel="tab右"/>
+                <constraint firstItem="NUp-Qj-qbo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dAW-XX-xIj" userLabel="tab左"/>
+                <constraint firstAttribute="trailing" secondItem="W6f-H0-cYK" secondAttribute="trailing" id="h8o-cc-uYA" userLabel="导航右"/>
+                <constraint firstItem="W6f-H0-cYK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="hgX-1j-n8S" userLabel="导航上"/>
+                <constraint firstAttribute="bottom" secondItem="NUp-Qj-qbo" secondAttribute="bottom" id="iHj-v0-qyh" userLabel="tab下"/>
+                <constraint firstItem="NUp-Qj-qbo" firstAttribute="height" secondItem="W6f-H0-cYK" secondAttribute="height" multiplier="12" id="rUz-0e-TGu"/>
+            </constraints>
+            <point key="canvasLocation" x="524" y="335"/>
+        </view>
+    </objects>
+</document>

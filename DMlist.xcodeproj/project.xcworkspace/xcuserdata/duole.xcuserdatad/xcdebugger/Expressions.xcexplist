@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__28+[BaiDu setFenMian3:CiTiao:]_block_invoke_2:BaiDu.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[DMTableVC viewDidLoad]:DMTableVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_btn.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DMTableVC tableView:cellForRowAtIndexPath:]:DMTableVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YingDaoVC YingDaoIamge]:YingDaoVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[BaiDu updataDIC]:BaiDu.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "DIC">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[BaiDu setFenMian3:CiTiao:]:BaiDu.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "DIC">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DMTableVC collectionView:cellForItemAtIndexPath:]:DMTableVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MainVC viewDidLoad]:MainVC.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController.navigationBar.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[YingDaoVC viewDidLoad]:YingDaoVC.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

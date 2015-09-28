@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC">
+            <connections>
+                <outlet property="BiliBiliBg" destination="ayr-am-pBs" id="XBs-Xb-sVX"/>
+                <outlet property="MainTable" destination="fGw-gA-CNH" id="0RG-2X-WT6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="center" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DHBg0.png" translatesAutoresizingMaskIntoConstraints="NO" id="ayr-am-pBs">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="473"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fGw-gA-CNH">
+                    <rect key="frame" x="0.0" y="47" width="320" height="521"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="3wt-jN-61E">
+                        <size key="itemSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ayr-am-pBs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1hn-e0-FyR" userLabel="image左"/>
+                <constraint firstItem="fGw-gA-CNH" firstAttribute="height" secondItem="ayr-am-pBs" secondAttribute="height" multiplier="12" id="B2m-6P-rCl" userLabel="高度比例"/>
+                <constraint firstAttribute="trailing" secondItem="fGw-gA-CNH" secondAttribute="trailing" id="ICf-3i-9Ls" userLabel="右"/>
+                <constraint firstItem="ayr-am-pBs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="O77-dk-5k1" userLabel="image上"/>
+                <constraint firstAttribute="bottom" secondItem="fGw-gA-CNH" secondAttribute="bottom" id="Zmp-h9-xFh" userLabel="下"/>
+                <constraint firstItem="fGw-gA-CNH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gn9-AG-EDb" userLabel="左"/>
+                <constraint firstItem="fGw-gA-CNH" firstAttribute="top" secondItem="ayr-am-pBs" secondAttribute="bottom" id="kH6-xj-zWt" userLabel="间距"/>
+                <constraint firstAttribute="trailing" secondItem="ayr-am-pBs" secondAttribute="trailing" id="thd-eu-KFM" userLabel="image右"/>
+            </constraints>
+            <point key="canvasLocation" x="254" y="294"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DHBg0.png" width="600" height="100"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

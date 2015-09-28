@@ -1,0 +1,8 @@
+//appName.app目录//
+分组名字.plist//保存的分组信息
+默认图片
+
+//Document目录
+mydb.db//从qt版继承过来的番组数据库
+番组网址.plist//保存动漫的封面图片地址[番名（字典）｛@“封面” ，网址｝]；
+YingDao.plist//判断是否引导

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YingDaoVC">
+            <connections>
+                <outlet property="Btn" destination="7VN-f9-rrp" id="C4g-GD-PhR"/>
+                <outlet property="Page" destination="cKu-tP-057" id="vCS-VJ-dXG"/>
+                <outlet property="ScrollView" destination="ivr-yg-n2G" id="DjX-ck-0FB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivr-yg-n2G">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ivr-yg-n2G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A1V-gb-Yga" userLabel="上"/>
+                <constraint firstAttribute="bottom" secondItem="ivr-yg-n2G" secondAttribute="bottom" id="WeG-T3-OF4" userLabel="下"/>
+                <constraint firstAttribute="trailing" secondItem="ivr-yg-n2G" secondAttribute="trailing" id="ZdU-Gt-0wd" userLabel="右"/>
+                <constraint firstItem="ivr-yg-n2G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f16-sV-hoZ" userLabel="左"/>
+            </constraints>
+            <point key="canvasLocation" x="340" y="322"/>
+        </view>
+        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="cKu-tP-057">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="pageIndicatorTintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="currentPageIndicatorTintColor" red="1" green="0.92836645259999995" blue="0.35604020549999998" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="201" y="748.5"/>
+        </pageControl>
+        <button opaque="NO" alpha="0.64999999999999969" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7VN-f9-rrp">
+            <rect key="frame" x="0.0" y="0.0" width="71" height="27"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.90417514639999996" green="0.9507521391" blue="0.93107008049999995" alpha="1" colorSpace="calibratedRGB"/>
+            <state key="normal" title="跳过">
+                <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </state>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                    <integer key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <action selector="btn:" destination="-1" eventType="touchUpInside" id="4gR-xL-zbX"/>
+            </connections>
+            <point key="canvasLocation" x="446.5" y="764.5"/>
+        </button>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

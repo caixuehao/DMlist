@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<dict>
+		<key>image</key>
+		<string>待补.jpg</string>
+		<key>name</key>
+		<string>待补番</string>
+	</dict>
+	<key>2</key>
+	<dict>
+		<key>image</key>
+		<string>弃补.jpg</string>
+		<key>name</key>
+		<string>弃补番</string>
+	</dict>
+	<key>4</key>
+	<dict>
+		<key>image</key>
+		<string>喜欢.jpg</string>
+		<key>name</key>
+		<string>喜欢的番</string>
+	</dict>
+	<key>3</key>
+	<dict>
+		<key>image</key>
+		<string>看过.jpg</string>
+		<key>name</key>
+		<string>看过一般的番</string>
+	</dict>
+	<key>5</key>
+	<dict>
+		<key>image</key>
+		<string>其他.jpg</string>
+		<key>name</key>
+		<string>其他的</string>
+	</dict>
+</dict>
+</plist>
